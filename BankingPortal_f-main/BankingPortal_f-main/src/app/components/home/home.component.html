@@ -1,0 +1,421 @@
+<!-- <section class="hero bg-gradient-to-r from-blue-400 via-purple-400 to-pink-500 m-[-0.5rem]">
+  <div class="container-fluid">
+    <div class="panel-wrapper">
+     
+      <div class="left-panel p-4">
+        <h1 class="text-white text-4xl sm:text-5xl md:text-6xl font-semibold mb-4">
+         Secure Bank Network
+        </h1>
+        <p class="text-slate-800 text-lg sm:text-xl mb-4">Your Secure Solution for Banking Needs</p>
+        <div *ngIf="!authService.isLoggedIn()">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded shadow-md font-semibold" routerLink="/register">
+            Create Account
+          </button>
+        </div>
+
+        <div *ngIf="authService.isLoggedIn()">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded shadow-md text-sm font-semibold"
+            routerLink="/dashboard">
+            Dashboard
+          </button>
+        </div>
+      </div>
+    
+      <div class="right-panel">
+        <img src="assets/bank.jpg" alt="Dashboard Screenshot" class="w-full rounded-lg border border-gray-200">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-8 m-[-0.5rem]">
+  <div class="container px-2 mx-auto mb-4">
+    <h1 class="text-center p-3">We are Trusted!</h1>
+    <div class="main">
+      <div
+        class="left-para  min-w-0 p-4  rounded-lg border border-gray-200 hover:border-black-500 transition duration-200 transform hover:scale-105">
+        <p><b class="text-primary">Reputation</b> A trustworthy bank typically has a solid reputation built
+          over years of providing reliable services and maintaining high ethical standards. Positive
+          reviews and feedback from customers and industry experts contribute to its reputation.</p>
+        <p><b class="text-primary">Financial Stability</b> A reliable bank is financially stable, with
+          strong capital reserves and a healthy balance sheet. Financial stability ensures that the bank
+          can withstand economic downturns and unexpected events without compromising its ability to serve
+          customers.</p>
+      </div>
+      <div
+        class="right-para  min-w-0 p-4  rounded-lg border border-gray-200 hover:border-black-500 transition duration-200 transform hover:scale-105">
+        <p><b class="text-primary">Customer Service</b> Trustworthy banks prioritize excellent customer
+          service. They provide clear and transparent communication, offer personalized assistance, and
+          resolve customer inquiries and issues promptly and efficiently.</p>
+        <p><b class="text-primary">Security</b> Security is paramount for a trusted bank. They invest in
+          robust cybersecurity measures to protect customer data and transactions from unauthorized
+          access, fraud, and cyber threats..</p>
+      </div>
+    </div>
+  </div>
+  <div class=" example mb-6">
+    <img src="assets/s.png" alt="My Image" class="my-image">
+
+  </div>
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div
+        class="min-w-0 p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-500 transition duration-300 transform hover:scale-105">
+
+        <h4 class="mb-2 font-semibold text-gray-600 text-lg">
+          <span class="p-3 mr-4 text-blue-500 bg-blue-100 rounded-full ">
+            <i class="fas fa-shield-alt text-blue-500 text-3xl"></i>
+          </span>
+          Secure Transactions
+        </h4>
+        <p class="text-gray-600 text-normal">
+          Your transactions are secured using the latest encryption technologies to protect your financial data.
+        </p>
+      </div>
+      <div
+        class="min-w-0 p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-500 transition duration-300 transform hover:scale-105">
+        <h4 class="mb-2 font-semibold text-gray-600 text-lg">
+          <span class="p-3 mr-4 text-green-500 bg-green-100 rounded-full ">
+            <i class="fas fa-history text-green-500 text-3xl mb-4"></i>
+
+          </span>
+
+          Easy Fund Management
+        </h4>
+        <p class="text-gray-600 text-normal">
+          Manage your funds with ease using our intuitive and user-friendly banking interface.
+        </p>
+      </div>
+      <div
+        class="min-w-0 p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-500 transition duration-300 transform hover:scale-105">
+        <h4 class="mb-2 font-semibold text-gray-600 text-lg">
+          <span class="p-3 mr-4 text-orange-500 bg-orange-100 rounded-full ">
+            <i class="fas fa-users text-orange-500 text-3xl mb-4"></i>
+
+          </span>
+
+          Multi-User Support
+        </h4>
+        <p class="text-gray-600 text-normal">
+          Our banking portal supports multiple users, making it perfect for families and businesses.
+        </p>
+      </div>
+      <div
+        class="min-w-0 p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-500 transition duration-300 transform hover:scale-105">
+        <h4 class="mb-2 font-semibold text-gray-600 text-lg">
+          <span class="p-3 mr-4 text-teal-500 bg-teal-100 rounded-full ">
+            <i class="fas fa-history text-teal-500 text-3xl mb-4"></i>
+
+          </span>
+          Transaction History
+        </h4>
+        <p class="text-gray-600 text-normal">
+          Keep track of your transaction history with detailed records and real-time updates.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container p-5 mx-auto px-4 mt-8">
+    <h1 class="text-center text-success font-bold">
+      How We Work?
+    </h1>
+    <p class="text-center mb-3">We operate in a specific method to ensure that we understand your needs the best and
+      exceed your expectations.</p>
+    <div class="container text-center">
+      <div class="row shadow-lg p-3 mb-5 bg-body-emphasis rounded" id="change">
+        <div class="col">
+          <h3>Accepting Deposits</h3>
+        </div>
+        <div class="col-10">
+          <p>One of the primary functions of a bank is to accept deposits from individuals, businesses,
+            and other entities. These deposits can include savings accounts, checking accounts,
+            certificates of deposit (CDs), and other types of accounts.</p>
+        </div>
+      </div>
+      <div class="row shadow-lg p-3 mb-5 bg-body-emphasis rounded work" id="change">
+        <div class="col">
+          <h3>Payment Processing</h3>
+        </div>
+        <div class="col-10">
+          <p>Banks facilitate transactions and payments between individuals, businesses, and other
+            entities. They provide services such as electronic funds transfers, wire transfers, check
+            processing, credit card processing, and online banking platforms.</p>
+        </div>
+      </div>
+      <div class="row shadow-lg p-3 mb-5 bg-body-emphasis rounded work" id="change">
+        <div class="col">
+          <h3>Risk Management</h3>
+        </div>
+        <div class="col-10">
+          <p>Banks are responsible for managing various types of risks, including credit risk, interest
+            rate risk, liquidity risk, and operational risk. They employ risk management practices and
+            regulatory compliance measures to mitigate these risks and ensure the safety and stability
+            of the banking system.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="shadow-lg bg-body-tertiary rounded mt-8">
+    <div class="row p-2 g-col-6 text-xl text-center">
+      <h3>Visit Us <i class="fa-solid fa-location-dot fa-2xl" style="color: #d43316;"></i></h3>
+    </div>
+    
+    <div class="container  ml-8 p-2">
+      <div class="row">
+        <div class="col-sm-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.840078655262!2d73.8315676743038!3d18.53612756870059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf7ba4100001%3A0x2d93617adadd9f43!2sSymbiosis%20Center%20for%20Distance%20Learning%20(SCDL)!5e0!3m2!1sen!2sin!4v1708258438415!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div> 
+  </div>
+
+</section>
+
+<footer class=" mt-8 m-[-0.5rem]" >
+  <div class="large">
+    <ul class="ul">
+      <li><i class="fa-solid fa-building-columns fa-2xl p-3"></i>
+        <h2 class="m-3"><b>SBN</b></h2>
+      </li>
+    </ul>
+    <ul class="ul1 text-center">
+      <li class="mb-2"><b>Abouts</b></li>
+      <li class="mb-2">Advertiesment</li>
+      <li class="mb-2">Adventures</li>
+      <li class="mb-2">Show</li>
+    </ul>
+    <ul class="ul2 text-center">
+      <li class="mb-2"><b>Services</b></li>
+      <li class="mb-2">Optimizations</li>
+      <li class="mb-2">Control System</li>
+      <li class="mb-2">Desicion Making</li>
+    </ul>
+    <ul class="ul3 text-center">
+      <li class="mb-2"><b>XYZ</b></li>
+      <li class="mb-2">Fund</li>
+      <li class="mb-2">Loans</li>
+      <li class="mb-2">Personal Loans</li>
+    </ul>
+    <ul class="ul4 text-center">
+      <li class="mb-2"><b>Advantages</b></li>
+      <li class="mb-2">Easy to use</li>
+      <li class="mb-2">Pure Golds</li>
+      <li class="mb-2">New Services</li>
+    </ul>
+  </div>
+</footer> -->
+
+
+<section class="hero bg-gradient-to-r from-blue-400 via-purple-400 to-pink-500 m-[-0.5rem]">
+  <div class="container-fluid">
+    <div class="panel-wrapper">
+      <!-- Left Side -->
+      <div class="left-panel p-4">
+        <h1 class="text-white text-4xl sm:text-5xl md:text-6xl font-semibold mb-4">
+          <i class="fas fa-piggy-bank text-blue-500 mr-2"></i> 
+          <!-- Secure Bank Network -->
+        </h1>
+        <p class="text-slate-800 text-lg sm:text-xl mb-4">Your Secure Solution for Banking Needs</p>
+        <div *ngIf="!authService.isLoggedIn()">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded shadow-md font-semibold" routerLink="/register">
+            Create Account
+          </button>
+        </div>
+
+        <div *ngIf="authService.isLoggedIn()">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded shadow-md text-sm font-semibold"
+            routerLink="/dashboard">
+            Dashboard
+          </button>
+        </div>
+      </div>
+      <!-- Right Side -->
+      <div class="right-panel">
+        <img src="assets/bank.jpg" alt="Dashboard Screenshot" class="w-full rounded-lg border border-gray-200">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-8 m-[-0.5rem]">
+  <div class="container px-2 mx-auto mb-4">
+    <h1 class="text-center p-3">We are Trusted!</h1>
+    <div class="main">
+      <div
+        class="left-para  min-w-0 p-4  rounded-lg border border-gray-200 hover:border-black-500 transition duration-200 transform hover:scale-105">
+        <p><b class="text-primary">Reputation</b> A trustworthy bank typically has a solid reputation built
+          over years of providing reliable services and maintaining high ethical standards. Positive
+          reviews and feedback from customers and industry experts contribute to its reputation.</p>
+        <p><b class="text-primary">Financial Stability</b> A reliable bank is financially stable, with
+          strong capital reserves and a healthy balance sheet. Financial stability ensures that the bank
+          can withstand economic downturns and unexpected events without compromising its ability to serve
+          customers.</p>
+      </div>
+      <div
+        class="right-para  min-w-0 p-4  rounded-lg border border-gray-200 hover:border-black-500 transition duration-200 transform hover:scale-105">
+        <p><b class="text-primary">Customer Service</b> Trustworthy banks prioritize excellent customer
+          service. They provide clear and transparent communication, offer personalized assistance, and
+          resolve customer inquiries and issues promptly and efficiently.</p>
+        <p><b class="text-primary">Security</b> Security is paramount for a trusted bank. They invest in
+          robust cybersecurity measures to protect customer data and transactions from unauthorized
+          access, fraud, and cyber threats..</p>
+      </div>
+    </div>
+  </div>
+  <div class="example mb-6">
+    <img src="assets/s.png" alt="My Image" class="my-image">
+
+  </div>
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div
+        class="min-w-0 p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-500 transition duration-300 transform hover:scale-105">
+
+        <h4 class="mb-2 font-semibold text-gray-600 text-lg">
+          <span class="p-3 mr-4 text-blue-500 bg-blue-100 rounded-full ">
+            <i class="fas fa-shield-alt text-blue-500 text-3xl"></i>
+          </span>
+          Secure Transactions
+        </h4>
+        <p class="text-gray-600 text-normal">
+          Your transactions are secured using the latest encryption technologies to protect your financial data.
+        </p>
+      </div>
+      <div
+        class="min-w-0 p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-500 transition duration-300 transform hover:scale-105">
+        <h4 class="mb-2 font-semibold text-gray-600 text-lg">
+          <span class="p-3 mr-4 text-green-500 bg-green-100 rounded-full ">
+            <i class="fas fa-history text-green-500 text-3xl mb-4"></i>
+
+          </span>
+
+          Easy Fund Management
+        </h4>
+        <p class="text-gray-600 text-normal">
+          Manage your funds with ease using our intuitive and user-friendly banking interface.
+        </p>
+      </div>
+      <div
+        class="min-w-0 p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-500 transition duration-300 transform hover:scale-105">
+        <h4 class="mb-2 font-semibold text-gray-600 text-lg">
+          <span class="p-3 mr-4 text-orange-500 bg-orange-100 rounded-full ">
+            <i class="fas fa-users text-orange-500 text-3xl mb-4"></i>
+
+          </span>
+
+          Multi-User Support
+        </h4>
+        <p class="text-gray-600 text-normal">
+          Our banking portal supports multiple users, making it perfect for families and businesses.
+        </p>
+      </div>
+      <div
+        class="min-w-0 p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-500 transition duration-300 transform hover:scale-105">
+        <h4 class="mb-2 font-semibold text-gray-600 text-lg">
+          <span class="p-3 mr-4 text-teal-500 bg-teal-100 rounded-full ">
+            <i class="fas fa-history text-teal-500 text-3xl mb-4"></i>
+
+          </span>
+          Transaction History
+        </h4>
+        <p class="text-gray-600 text-normal">
+          Keep track of your transaction history with detailed records and real-time updates.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container p-5 mx-auto px-4 mt-8">
+    <h1 class="text-center text-success font-bold">
+      How We Work?
+    </h1>
+    <p class="text-center mb-3">We operate in a specific method to ensure that we understand your needs the best and
+      exceed your expectations.</p>
+    <div class="container text-center">
+      <div class="row shadow-lg p-3 mb-5 bg-body-emphasis rounded" id="change">
+        <div class="col">
+          <h3 class="font-bold">Accepting Deposits</h3>
+        </div>
+        <div class="col-10">
+          <p>One of the primary functions of a bank is to accept deposits from individuals, businesses,
+            and other entities. These deposits can include savings accounts, checking accounts,
+            certificates of deposit (CDs), and other types of accounts.</p>
+        </div>
+      </div>
+      <div class="row shadow-lg p-3 mb-5 bg-body-emphasis rounded work" id="change">
+        <div class="col">
+          <h3 class="font-bold">Payment Processing</h3>
+        </div>
+        <div class="col-10">
+          <p>Banks facilitate transactions and payments between individuals, businesses, and other
+            entities. They provide services such as electronic funds transfers, wire transfers, check
+            processing, credit card processing, and online banking platforms.</p>
+        </div>
+      </div>
+      <div class="row shadow-lg p-3 mb-5 bg-body-emphasis rounded work" id="change">
+        <div class="col">
+          <h3 class="font-bold">Risk Management</h3>
+        </div>
+        <div class="col-10">
+          <p>Banks are responsible for managing various types of risks, including credit risk, interest
+            rate risk, liquidity risk, and operational risk. They employ risk management practices and
+            regulatory compliance measures to mitigate these risks and ensure the safety and stability
+            of the banking system.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-8">
+    <div class="text-xl text-center">
+      <h3 class="p-2 mb-3">Visit Us <i class="fa-solid fa-location-dot fa-2xl" style="color: #d43316;"></i></h3>
+    </div>
+
+    <div class="min-w-0 bg-white rounded-lg border border-gray-100 hover:border-blue-500 transition duration-300 transform hover:scale-105">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.840078655262!2d73.8315676743038!3d18.53612756870059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf7ba4100001%3A0x2d93617adadd9f43!2sSymbiosis%20Center%20for%20Distance%20Learning%20(SCDL)!5e0!3m2!1sen!2sin!4v1708258438415!5m2!1sen!2sin"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" class="p-3"></iframe>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="assets\logo.png" alt="Secure Bank Network Logo">
+    </div>
+    <div class="footer-info">
+      <h4>Secure Bank Network</h4>
+      <p>Address: Near Symbiosis Bhavan, Pune</p>
+      <p>Phone: +91 9657795194</p>
+      <p>Email: sbn.securebanknetwork@gmail.com</p>
+    </div>
+    <div class="footer-services">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#">Personal Banking</a></li>
+        <li><a href="#">Business Banking</a></li>
+        <li><a href="#">Loans & Mortgages</a></li>
+        <li><a href="#">Investments</a></li>
+        <li><a href="#">Online Banking</a></li>
+        <li><a href="#">Mobile Banking</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <ul>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Secure Bank Network. All rights reserved.</p>
+  </div>
+</footer>

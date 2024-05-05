@@ -1,0 +1,51 @@
+:host {
+  display: flex;
+  flex: 1;
+}
+
+.coverparentspace {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background: rgb(106, 161, 227);
+    color: black;
+  }
+  
+  th,
+  td {
+    padding: 15px;
+    font-size: 14px;
+  }
+  
+  tr:nth-child(even) {
+    background: rgb(210, 205, 205);
+  }
+  
+  tfoot {
+    background: rgb(69, 149, 210);
+    font-weight: bold;
+    color: aliceblue;
+  }
+  
+  tfoot td {
+    padding: 15px;
+  }
+  
+  .table--container button {
+    color: red;
+    background: none;
+    cursor: pointer;
+  }
+  .main--title span{
+    font-size: 50px;
+  }
+  

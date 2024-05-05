@@ -1,0 +1,235 @@
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  overflow: hidden;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.image {
+  max-width: 100%;
+  height: 500px;
+  width: 1200px;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.overlay-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: left;
+  color: white;
+  font-size: 24px;
+  z-index: 1;
+  width: 30%;
+  opacity: 2;
+  /* Initially set the opacity to 0 */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .image {
+  transform: scale(1.1);
+}
+
+.image-container:hover .overlay-text {
+  opacity: 0.7;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+  width: 10rem;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  float: left;
+  font-size: 2.5em;
+  height: 400px;
+  border-radius: 20px;
+  margin-left: 50px;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover,
+.card6:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 1.25rem;
+  max-height: 200px;
+  /* Set a maximum height for the card body */
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #007bff;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  color: #fff;
+}
+
+.large ul {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 150px;
+}
+
+ul {
+  float: left;
+  padding: auto;
+}
+
+.ul1 {
+  float: left;
+  padding: auto;
+}
+
+.ul2 {
+  float: left;
+  padding: auto;
+}
+
+.ul3 {
+  float: left;
+  padding: auto;
+}
+
+.ul4 {
+  float: left;
+  padding: auto;
+}
+
+
+.footer {
+  background-color: #0e3865;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.footer-info, .footer-services, .footer-social {
+  flex: 1 1 25%;
+  padding: 0 20px;
+}
+
+.footer-info h4, .footer-services h4, .footer-social h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-info p {
+  margin-bottom: 10px;
+}
+
+.footer-services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-services ul li {
+  margin-bottom: 5px;
+}
+
+.footer-services ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-services ul li a:hover {
+  color: #fff;
+}
+
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer-social ul li {
+  margin-right: 10px;
+}
+
+.footer-social ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-social ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  border-top: 1px solid #082c4e;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}

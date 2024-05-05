@@ -1,0 +1,40 @@
+<header class="nav bg-white shadow">
+  <div class="nav-wrapper flex items-center justify-between mx-1">
+    <h1 *ngIf="!isLoggedIn() || checkScreenSize()"
+      class="nav-logo min-w-min !min-w-[fit-content] text-xl md:text-2xl font-bold">
+      <p class="name">SecureBankNetwork</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </h1>
+    <div class="nav-body w-full flex justify-end space-x-4 p-1">
+      <a class="smallscreen bg-gray-200 text-black font-bold py-2 px-4  text-sm active">
+        <i class="fa-solid fa-location-dot mr-1" ></i>Home
+      </a>
+      <a class="smallscreen hover:bg-gray-100 text-black font-bold py-2 px-4  text-sm" routerLink="/about">
+        <i class="fa-solid fa-location-dot mr-1"></i>About
+      </a>
+      <a class="smallscreen hover:bg-gray-100 text-black font-bold py-2 px-4  text-sm" routerLink="/loan">
+        <i class="fa-solid fa-location-dot mr-1"></i> Loans
+      </a>
+     <a *ngIf="!isLoggedIn()" routerLink="/login"
+        class="smallscreen  rounded-pill border-gray-500 hover:bg-gray-100 text-black font-bold py-2 px-4 rounded-pill focus:outline-none focus:shadow-outline text-sm">
+        <i class="fas fa-sign-in-alt mr-1"></i> Login
+      </a> 
+      <!-- routerLink="/register" -->
+      <a *ngIf="!isLoggedIn()" routerLink="/admin"
+        class="smallscreen bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline text-sm">
+        <i class="fas fa-user-plus mr-1"></i>Admin
+      </a>
+      <button *ngIf="isLoggedIn()"
+        class="smallscreen bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline text-sm"
+        (click)="logout()">
+        <i class="fas fa-sign-out-alt mr-1"></i> Logout
+      </button>
+    </div>
+  </div>
+
+</header>
+
+<div class="bg-primary">
+      <!-- <div class="col align-self-end">
+          <marquee behavior="" direction="right"><b>The Future of Banking is SBN Bank.<a routerLink="/about" style="color: blue;">@SBN</a></b></marquee>
+      </div> -->
+</div>

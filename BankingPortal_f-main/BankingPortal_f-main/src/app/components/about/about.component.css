@@ -1,0 +1,125 @@
+*{
+    padding: auto;
+}
+#con{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card{
+    float: left;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+
+.large ul {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 150px;
+  }
+  
+  ul {
+    float: left;
+    padding: auto;
+  }
+  
+  .ul1 {
+    float: left;
+    padding: auto;
+  }
+  
+  .ul2 {
+    float: left;
+    padding: auto;
+  }
+  
+  .ul3 {
+    float: left;
+    padding: auto;
+  }
+  
+  .ul4 {
+    float: left;
+    padding: auto;
+  }
+
+  
+.footer {
+  background-color: #0e3865;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.footer-info, .footer-services, .footer-social {
+  flex: 1 1 25%;
+  padding: 0 20px;
+}
+
+.footer-info h4, .footer-services h4, .footer-social h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-info p {
+  margin-bottom: 10px;
+}
+
+.footer-services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-services ul li {
+  margin-bottom: 5px;
+}
+
+.footer-services ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-services ul li a:hover {
+  color: #fff;
+}
+
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer-social ul li {
+  margin-right: 10px;
+}
+
+.footer-social ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-social ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  border-top: 1px solid #082c4e;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
